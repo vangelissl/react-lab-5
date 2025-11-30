@@ -1,34 +1,31 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import logo from '../../assets/big-logo-no-text.png';
 
 function CallToAction() {
+	const fullText = 'Secure Your City';
+	const [displayedText, setDisplayedText] = useState('');
 
 	useEffect(() => {
-		const motto = document.getElementById('big-logo-motto');
+		let index = 0;
 
-		if (motto) {
-			const mottoText = motto.textContent;
-			let id = setInterval(frame, 120);
-			motto.textContent = "";
-			let counter = 0;
-
-			function frame() {
-				if (counter === mottoText.length) {
-					clearInterval(id);
-				} else {
-					motto.textContent += mottoText[counter];
-					counter++;
-				}
+		const intervalId = setInterval(() => {
+			if (index < fullText.length){
+				setDisplayedText(fullText.slice(0, index + 1));
+				index++;
+			} else {
+				clearInterval(intervalId);
 			}
-		}
-	});
+		}, 120);
+
+		return () => clearInterval(intervalId);
+	}, []);
 
 	return (
 		<header>
 			<div id="big-logo">
 				<a href="contact.html">
 					<img src={logo} />
-					<p id="big-logo-motto">Secure Your City</p>
+					<p id="big-logo-motto">{displayedText}</p>
 				</a>
 			</div>
 		</header>
