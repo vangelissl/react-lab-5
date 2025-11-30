@@ -1,6 +1,59 @@
 
 
 function ModelsTable() {
+	const modelsList = [
+		{
+			name: 'SAU-03-Eye',
+			lethal: true,
+			nonLethal: true,
+			sexual: true,
+			harrassment: true,
+			theft: true,
+			propertyDamage: true
+		},
+		{
+			name: 'SI-01-Watcher',
+			lethal: true,
+			nonLethal: true,
+			sexual: true,
+			harrassment: true,
+			theft: false,
+			propertyDamage: false
+		},
+		{
+			name: 'QU-16-Spectre',
+			lethal: true,
+			nonLethal: true,
+			sexual: false,
+			harrassment: false,
+			theft: false,
+			propertyDamage: false
+		},
+		{
+			name: 'RM-Solo',
+			lethal: true,
+			nonLethal: false,
+			sexual: false,
+			harrassment: false,
+			theft: false,
+			propertyDamage: false
+		}
+	]
+
+	const cells = modelsList.map(m => {
+		const booleanValues = Object.values(m).filter(val => typeof val === 'boolean');
+		const plusCount = booleanValues.filter(val => val === true).length;
+		const minusCount = booleanValues.length - plusCount;
+
+		return (
+			<tr>
+				<th>{m.name}</th>
+				{(plusCount > 0) && <td className="plus" colspan={plusCount}>+</td>}
+				{(minusCount > 0) && <td className="minus" colspan={minusCount}>-</td>}
+			</tr>
+		);
+	});
+
 	return (
 		<div className="table-container">
 			<article>
@@ -20,25 +73,7 @@ function ModelsTable() {
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<th>SAU-03-Eye</th>
-								<td className="plus" colspan="6">+</td>
-							</tr>
-							<tr>
-								<th>SI-01-Watcher</th>
-								<td className="plus" colspan="4">+</td>
-								<td className="minus" colspan="2">-</td>
-							</tr>
-							<tr>
-								<th>QU-16-Spectre</th>
-								<td className="plus" colspan="2">+</td>
-								<td className="minus" colspan="4">-</td>
-							</tr>
-							<tr>
-								<th>RM-Solo</th>
-								<td className="plus">+</td>
-								<td className="minus" colspan="5">-</td>
-							</tr>
+							{cells}
 						</tbody>
 					</table>
 				</div>
