@@ -2,7 +2,7 @@
 
 function Home() {
 	return (
-		<main class="victor-mono-regular">
+		<>
 			<header>
 				<div id="big-logo">
 					<a href="contact.html">
@@ -174,7 +174,7 @@ function Home() {
 					</div>
 				</div>
 			</div>
-		</main>
+		</>
 	);
 }
 
