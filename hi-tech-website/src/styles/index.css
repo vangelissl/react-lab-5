@@ -4,6 +4,10 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+main{
+	background-color: white;
+}
+
 p {
 	font-size: 1.1em;
 	text-align: center;
@@ -109,4 +113,8 @@ footer nav {
 
 footer a {
 	color: black;
+}
+
+body.dark-mode {
+    filter: brightness(0.8) contrast(1.2);
 }

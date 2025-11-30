@@ -59,10 +59,12 @@ main>header {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	background-color: white;
 }
 
 .table-container {
 	flex-grow: 1;
+	background-color: white;
 }
 
 .table-container>article {
@@ -70,11 +72,13 @@ main>header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-color: white;
 }
 
 .table-body-container {
 	overflow-y: auto;
 	max-height: 40vh;
+	background-color: white;
 }
 
 table {
@@ -142,6 +146,7 @@ tfoot td {
 	justify-content: center;
 	margin: 0;
 	padding: 3rem;
+	background-color: white;
 }
 
 @keyframes cameraAnim {
@@ -164,6 +169,7 @@ tfoot td {
 	animation-name: cameraAnim;
 	animation-duration: 15s;
 	animation-iteration-count: infinite;
+	background-color: white;
 }
 
 #camera-div {
@@ -173,14 +179,17 @@ tfoot td {
 	padding: 0;
 	width: 100%;
 	clear: both;
+	background-color: white;
 }
 
 #camera-div .camera {
 	align-self: flex-end;
+	background-color: white;
 }
 
 .article-camera-container {
 	height: 90vh;
+	background-color: white;
 }
 
 .article-text {
@@ -194,6 +203,7 @@ tfoot td {
 	display: flex;
 	justify-content: center;
 	height: 90vh;
+	background-color: white;
 }
 
 #mission-container>article {
@@ -202,6 +212,7 @@ tfoot td {
 	margin: 0;
 	padding: 3rem;
 	width: 80%;
+	background-color: white;
 }
 
 #mission-content-container {
@@ -211,12 +222,14 @@ tfoot td {
 	align-items: center;
 	padding: 3rem;
 	width: 80%;
+	background-color: white;
 }
 
 #mission-title-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
+	background-color: white;
 }
 
 iframe {
