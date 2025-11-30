@@ -9,7 +9,6 @@ function Home() {
 			<CallToAction />
 			<AboutUsSection />
 			<TablesSection />
-			
 		</>
 	);
 }
