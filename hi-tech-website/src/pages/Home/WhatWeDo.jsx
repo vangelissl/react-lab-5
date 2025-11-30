@@ -2,12 +2,12 @@
 
 function WhatWeDo() {
 	return (
-		<div class="article-camera-container">
+		<div className="article-camera-container">
 			<div id="camera-div">
-				<img class="camera" src="images\istockphoto-598930712-612x612.jpg" />
+				<img className="camera" src="images\istockphoto-598930712-612x612.jpg" />
 			</div>
-			<div class="problem-container">
-				<article class="article-text">
+			<div className="problem-container">
+				<article className="article-text">
 					<h2>What We Do</h2>
 					<p>
 						We are <abbr title="Secure Your City">SYC</abbr> - a company that provides low-latency

@@ -2,12 +2,12 @@
 
 function WhatWeSolve() {
 	return (
-		<div class="article-camera-container">
-			<img class="camera"
+		<div className="article-camera-container">
+			<img className="camera"
 				src="images\realistic-video-surveillance-camera-side-view-vector-illustration_1284-66719.jpg"
 				height="250em" />
-			<div class="problem-container">
-				<article class="article-text">
+			<div className="problem-container">
+				<article className="article-text">
 					<h2>What Problem Do We Solve</h2>
 					<p id="purpose">
 						Our system operates on a network of CCTV cameras to help you detect
