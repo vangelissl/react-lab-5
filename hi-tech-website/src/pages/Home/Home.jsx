@@ -1,6 +1,7 @@
 import CallToAction from './CallToAction.jsx';
 import AboutUsSection from './AboutUsSection.jsx';
 import TablesSection from './TablesSection.jsx';
+import '../../styles/home.css';
 
 function Home() {
 	return (
@@ -8,7 +9,7 @@ function Home() {
 			<CallToAction />
 			<AboutUsSection />
 			<TablesSection />
-			<div id="popup" class="popup">
+			{/* <div id="popup" class="popup">
 				<div class="popup-content">
 					<h3 id="popup-question">What is your name?</h3>
 					<input type="text" id="popup-input" placeholder="Type your answer..." />
@@ -17,7 +18,7 @@ function Home() {
 						<button id="cancelBtn">Cancel</button>
 					</div>
 				</div>
-			</div>
+			</div> */}
 		</>
 	);
 }

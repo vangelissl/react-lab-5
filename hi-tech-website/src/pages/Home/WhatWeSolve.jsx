@@ -1,10 +1,10 @@
-
+import camera from '../../assets/camera2.jpg';
 
 function WhatWeSolve() {
 	return (
 		<div className="article-camera-container">
 			<img className="camera"
-				src="images\realistic-video-surveillance-camera-side-view-vector-illustration_1284-66719.jpg"
+				src={camera}
 				height="250em" />
 			<div className="problem-container">
 				<article className="article-text">

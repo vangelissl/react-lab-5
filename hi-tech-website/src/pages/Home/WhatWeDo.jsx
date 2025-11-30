@@ -1,10 +1,10 @@
-
+import camera from '../../assets/camera1.jpg'
 
 function WhatWeDo() {
 	return (
 		<div className="article-camera-container">
 			<div id="camera-div">
-				<img className="camera" src="images\istockphoto-598930712-612x612.jpg" />
+				<img className="camera" src={camera} />
 			</div>
 			<div className="problem-container">
 				<article className="article-text">
