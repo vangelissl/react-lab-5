@@ -24,7 +24,7 @@ h2 {
 	display: flex;
 }
 
-#top-header {
+header {
 	top: 0;
 	box-shadow: 0 1px 4px rgba(70, 70, 70, 0.408);
 	padding: 0;
