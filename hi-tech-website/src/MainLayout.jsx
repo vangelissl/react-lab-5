@@ -6,9 +6,7 @@ function MainLayout() {
 	return (
 		<div className='app-container'>
 			<Navbar />
-			<main className="victor-mono-regular">
 				<Outlet />
-			</main>
 			<Footer />
 		</div>
 	);

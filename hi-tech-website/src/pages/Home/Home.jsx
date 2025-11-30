@@ -6,9 +6,11 @@ import '../../styles/home.css';
 function Home() {
 	return (
 		<>
-			<CallToAction />
-			<AboutUsSection />
-			<TablesSection />
+			<main className="victor-mono-regular">
+				<CallToAction />
+				<AboutUsSection />
+				<TablesSection />
+			</main>
 		</>
 	);
 }
