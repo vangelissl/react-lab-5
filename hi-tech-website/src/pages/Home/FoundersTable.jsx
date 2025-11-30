@@ -1,6 +1,50 @@
 
 
 function FoundersTable() {
+
+	const founders = [
+		{
+			name: 'Maria Stashenko',
+			role: 'Founder & Head of Product Innovation',
+			background: '3+ years in software enginering, student at KNU',
+			isFounder: true
+		},
+		{
+			name: 'Alex Carter',
+			role: 'CEO',
+			background: '10+ years in cybersecurity, ex-Google',
+			isFounder: false
+		},
+		{
+			name: 'Sophia Lee',
+			role: 'CTO',
+			background: 'PhD in AI, led research at MIT',
+			isFounder: false
+		},
+		{
+			name: 'David Krasinski',
+			role: 'COO',
+			background: 'Operations strategist, ex-Microsoft',
+			isFounder: false
+		},
+		{
+			name: 'Maria Rossi',
+			role: 'CFO',
+			background: 'Finance expert, worked at Goldman Sachs',
+			isFounder: false
+		}
+	]
+
+	const cells = founders.map(f => {
+		return (
+			<tr id={f.isFounder ? 'founder' : undefined}>
+				<td>{f.name}</td>
+				<td>{f.role}</td>
+				<td>{f.background}</td>
+			</tr>
+		);
+	})
+
 	return (
 		<div className="table-container">
 			<article>
@@ -15,35 +59,11 @@ function FoundersTable() {
 							</tr>
 						</thead>
 						<tbody>
-							<tr id="founder">
-								<td>Maria Stashenko</td>
-								<td>Founder & Head of Product Innovation</td>
-								<td>3+ years in software engineering, student at KNU</td>
-							</tr>
-							<tr>
-								<td>Alex Carter</td>
-								<td>CEO</td>
-								<td>10+ years in cybersecurity, ex-Google</td>
-							</tr>
-							<tr>
-								<td>Sophia Lee</td>
-								<td>CTO</td>
-								<td>PhD in AI, led research at MIT</td>
-							</tr>
-							<tr>
-								<td>David Krasinski</td>
-								<td>COO</td>
-								<td>Operations strategist, ex-Microsoft</td>
-							</tr>
-							<tr>
-								<td>Maria Rossi</td>
-								<td>CFO</td>
-								<td>Finance expert, worked at Goldman Sachs</td>
-							</tr>
+							{cells}
 						</tbody>
 						<tfoot>
 							<tr>
-								<td colspan="3">Founders of SecureYourCity, 2025</td>
+								<td colspan="3">Founders of SecureYourCity, {(new Date).getFullYear()}</td>
 							</tr>
 						</tfoot>
 					</table>
