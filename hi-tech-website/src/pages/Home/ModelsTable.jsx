@@ -1,44 +1,10 @@
-
+import { useContext } from 'react';
+import { ModelsContext } from '../../contexts/ModelsContext';
 
 function ModelsTable() {
-	const modelsList = [
-		{
-			name: 'SAU-03-Eye',
-			lethal: true,
-			nonLethal: true,
-			sexual: true,
-			harrassment: true,
-			theft: true,
-			propertyDamage: true
-		},
-		{
-			name: 'SI-01-Watcher',
-			lethal: true,
-			nonLethal: true,
-			sexual: true,
-			harrassment: true,
-			theft: false,
-			propertyDamage: false
-		},
-		{
-			name: 'QU-16-Spectre',
-			lethal: true,
-			nonLethal: true,
-			sexual: false,
-			harrassment: false,
-			theft: false,
-			propertyDamage: false
-		},
-		{
-			name: 'RM-Solo',
-			lethal: true,
-			nonLethal: false,
-			sexual: false,
-			harrassment: false,
-			theft: false,
-			propertyDamage: false
-		}
-	]
+	const modelsList = useContext(ModelsContext);
+
+	if (!modelsList) return null;
 
 	const cells = modelsList.map(m => {
 		const booleanValues = Object.values(m).filter(val => typeof val === 'boolean');
