@@ -1,21 +1,46 @@
-import {useContext} from 'react';
+import { useContext, useState } from 'react';
 import { FoundersContext } from '../../contexts/FoundersContext.jsx';
+import Popup from './Popup.jsx';
 
 function FoundersTable() {
-
 	const founders = useContext(FoundersContext);
+
+	const [showPopup, setShowPopup] = useState(false);
+
+	const riddle = "I have keys but open no locks. I have space but no room. You can enter, but you can't go inside. What am I?";
+	const correctAnswer = 'Keyboard';
+
+	const handleMouseEnter = (isFounder) => {
+		if(isFounder){
+			setShowPopup(true);
+		}
+	};
+
+	const handleAnswerSubmit = (userAnswer) => {
+		if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) {
+			alert('You answered correctly!');
+		} else if (userAnswer) {
+			alert('You answered incorrectly, try again');
+		} else{
+			alert('Enter the answer');
+		}
+		setShowPopup(false);
+	}
 
 	if (!founders) return null;
 
 	const cells = founders.map(f => {
 		return (
-			<tr key={f.name} id={f.isFounder ? 'founder' : undefined}>
+			<tr 
+			key={f.name} 
+			id={f.isFounder ? 'founder' : undefined}
+			onMouseEnter={() => handleMouseEnter(f.isFounder)}>
 				<td>{f.name}</td>
 				<td>{f.role}</td>
 				<td>{f.background}</td>
 			</tr>
 		);
-	})
+	});
 
 	return (
 		<div className="table-container">
@@ -40,6 +65,12 @@ function FoundersTable() {
 						</tfoot>
 					</table>
 				</div>
+				<Popup
+				isOpen={showPopup}
+				question={riddle}
+				onClose={() => setShowPopup(false)}
+				onSubmit={handleAnswerSubmit}
+				/>
 			</article>
 		</div>
 	);

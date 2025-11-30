@@ -1,14 +1,30 @@
+import { useState } from 'react';
+import '../../styles/popup.css';
 
+function Popup({ isOpen, onClose, onSubmit, question }) {
+	const [inputValue, setInputValue] = useState('');
 
-function Popup() {
+	if (!isOpen) return null;
+
+	const handleOkClick = () => {
+		onSubmit(inputValue);
+		setInputValue("");
+	};
+
 	return (
-		<div id="popup" class="popup">
-			<div class="popup-content">
-				<h3 id="popup-question">What is your name?</h3>
-				<input type="text" id="popup-input" placeholder="Type your answer..." />
-				<div class="popup-buttons">
-					<button id="okBtn">OK</button>
-					<button id="cancelBtn">Cancel</button>
+		<div className="popup" style={{ display: 'flex' }}>
+			<div className="popup-content">
+				<h3>{question}</h3>
+				<input
+					type="text"
+					placeholder="Type your answer..."
+					value={inputValue}
+					onChange={(e) => setInputValue(e.target.value)} 
+					autoFocus
+				/>
+				<div className="popup-buttons">
+					<button onClick={handleOkClick}>OK</button>
+					<button onClick={onClose}>Cancel</button>
 				</div>
 			</div>
 		</div>
