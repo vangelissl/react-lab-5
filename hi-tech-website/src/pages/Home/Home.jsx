@@ -1,12 +1,13 @@
 import CallToAction from './CallToAction.jsx';
 import AboutUsSection from './AboutUsSection.jsx';
+import TablesSection from './TablesSection.jsx';
 
 function Home() {
 	return (
 		<>
 			<CallToAction />
 			<AboutUsSection />
-			
+			<TablesSection />
 			<div id="popup" class="popup">
 				<div class="popup-content">
 					<h3 id="popup-question">What is your name?</h3>

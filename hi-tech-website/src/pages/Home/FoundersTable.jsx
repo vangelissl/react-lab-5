@@ -2,10 +2,10 @@
 
 function FoundersTable() {
 	return (
-		<div class="table-container">
+		<div className="table-container">
 			<article>
 				<h2>Founders</h2>
-				<div class="table-body-container" id="founders-container" tabindex="0">
+				<div className="table-body-container" id="founders-container" tabindex="0">
 					<table id="founders-table">
 						<thead>
 							<tr>
