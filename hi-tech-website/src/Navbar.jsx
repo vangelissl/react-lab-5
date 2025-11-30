@@ -2,7 +2,7 @@
 
 function Navbar() {
 	return (
-		<header>
+		<header id="top-header">
 			<nav>
 				<svg id="small-logo" version="1.0" xmlns="http://www.w3.org/2000/svg" height="1.7em"
 					viewBox="0 0 500.000000 115.000000" preserveAspectRatio="xMidYMid meet">
