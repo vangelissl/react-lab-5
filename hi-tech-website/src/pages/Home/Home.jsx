@@ -1,16 +1,9 @@
-
+import CallToAction from './CallToAction.jsx';
 
 function Home() {
 	return (
 		<>
-			<header>
-				<div id="big-logo">
-					<a href="contact.html">
-						<img src="images\big-logo-no-text.png" />
-						<p id="big-logo-motto">Secure Your City</p>
-					</a>
-				</div>
-			</header>
+			<CallToAction/>
 			<section>
 				<div class="article-camera-container">
 					<div id="camera-div">
