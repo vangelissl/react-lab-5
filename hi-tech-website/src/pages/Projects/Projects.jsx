@@ -8,7 +8,7 @@ function Projects() {
 		<>
 			<ProjectsProvider>
 				<Slideshow />
-				<div class="container">
+				<div className="container">
 					<aside id="project-list">
 						<h1>Our Projects</h1>
 						<Navigation />
