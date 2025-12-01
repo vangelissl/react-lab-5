@@ -3,10 +3,10 @@ function Form() {
 		<form method="post">
 			<fieldset id="personal-info">
 				<legend>Personal Information</legend>
-				<div class="personal-container">
+				<div className="personal-container">
 					<label for="fname">First name:</label>
 					<label for="lname">Last name:</label>
-					<input type="text" id="fname" name="fname" placeholder="John" required />
+					<input type="text" id="fname" className="fname" placeholder="John" required />
 					<input type="text" id="lname" name="lname" placeholder="Doe" required />
 					<label for="email">Email:</label>
 					<label for="age">Age:</label>
@@ -46,9 +46,9 @@ function Form() {
 					<textarea id="details" name="details" rows="5" cols="40" maxlength="500"></textarea>
 				</div>
 			</fieldset>
-			<div class="agreement-container">
+			<div className="agreement-container">
 				<input type="checkbox" id="agreement" name="agreement" required />
-				<label for="agreement">I agree to the
+				<label for="agreement">{'I agree to the '}
 					<a href="https://policies.google.com/privacy?hl=en-US">
 						Privacy Policy
 					</a>
