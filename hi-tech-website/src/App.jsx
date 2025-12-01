@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import MainLayout from './MainLayout.jsx';
 import Home from './pages/Home/Home.jsx';
 import Projects from './pages/Projects/Projects.jsx';
+import Testimonials from './pages/Testimonials/Testimonials.jsx';
 
 
 function App() {
@@ -28,6 +29,9 @@ function App() {
 				</Route>
 				<Route path="/projects" element={<MainLayout />}>
 					<Route index element={<Projects />} />
+				</Route>
+				<Route path="/testimonials" element={<MainLayout />}>
+					<Route index element={<Testimonials />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

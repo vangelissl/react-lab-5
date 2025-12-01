@@ -9,12 +9,12 @@ function Projects() {
 		<>
 			<ProjectsProvider>
 				<Slideshow />
-				<div className="container">
+				<div className="projects-container">
 					<aside id="project-list">
 						<h1>Our Projects</h1>
 						<Navigation />
 					</aside>
-					<main className="victor-mono-regular">
+					<main className="victor-mono-regular projects-main">
 						<Grid />
 					</main>
 				</div>
