@@ -1,4 +1,4 @@
-import {useContext} from 'react';
+import { useContext } from 'react';
 import { TestimonialsContext } from "../../contexts/TestimonialsContext";
 
 function Grid() {
@@ -11,7 +11,7 @@ function Grid() {
 			{testimonials.map(t => (
 				<li key={t.projectId}>
 					<article className="testimonial-article">
-						<h3><a href={`projects.html#${t.projectId}`}>{t.name}</a></h3>
+						<h3><a href={`/projects#${t.projectId}`}>{t.name}</a></h3>
 						<q><i>{t.text}</i></q>
 						<p>{`— ${t.author}`}</p>
 					</article>
