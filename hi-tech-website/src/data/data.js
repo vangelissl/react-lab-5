@@ -82,7 +82,7 @@ export const projectsList = [
 			'Data stored for 30 days', 
 			'Cloud-based infrastructure'
 		],
-		img: '../../../public/images/cities/Kyiv.png'
+		img: '/images/cities/Kyiv.png'
 	},
 	{
 		id: 'warsaw-project',
@@ -95,7 +95,7 @@ export const projectsList = [
 			'Mobile app integration',
 			'Centralized management'
 		],
-		img: '../../../public/images/cities/Warsaw.png'
+		img: '/images/cities/Warsaw.png'
 	}, 
 	{
 		id: 'berlin-project',
@@ -108,7 +108,7 @@ export const projectsList = [
 			'GDPR-compliant privacy measures',
 			'Email and SMS alerts'
 		],
-		img: '../../../public/images/cities/Berlin.png'
+		img: '/images/cities/Berlin.png'
 	},
 	{
 		id: 'london-project',
@@ -121,7 +121,7 @@ export const projectsList = [
 			'Multilingual reporting',
 			'Weekly safety analytics'
 		],
-		img: '../../../public/images/cities/London.png'
+		img: '/images/cities/London.png'
 	},
 	{
 		id: 'toronto-project',
@@ -134,7 +134,7 @@ export const projectsList = [
 			'Secure encrypted connections',
 			'Local server caching'
 		],
-		img: '../../../public/images/cities/Toronto.png'
+		img: '/images/cities/Toronto.png'
 	},
 	{
 		id: 'tokyo-project',
@@ -147,7 +147,7 @@ export const projectsList = [
 			'Event-specific monitoring',
 			'Automated summary reports'
 		],
-		img: '../../../public/images/cities/tokyo.png'
+		img: '/images/cities/tokyo.png'
 	},
 	{
 		id: 'paris-project',
@@ -160,7 +160,7 @@ export const projectsList = [
 			'Violence escalation prediction',
 			'Secure cloud hosting'
 		],
-		img: '../../../public/images/cities/Paris.png'
+		img: '/images/cities/Paris.png'
 	},
 	{
 		id: 'new-york-city-project',
@@ -173,7 +173,7 @@ export const projectsList = [
 			'Geo-tagging of incidents',
 			'High availability servers'
 		],
-		img: '../../../public/images/cities/New York.png'
+		img: '/images/cities/New York.png'
 	},
 	{
 		id: 'madrid-project',
@@ -186,7 +186,7 @@ export const projectsList = [
 			'Customizable reporting tools',
 			'Public safety dashboard'
 		],
-		img: '../../../public/images/cities/Madrid.png'
+		img: '/images/cities/Madrid.png'
 	},
 	{
 		id: 'stockholm-project',
@@ -199,7 +199,7 @@ export const projectsList = [
 			'Advance predictive modeling',
 			'Automated law enforcement dispatch'
 		],
-		img: '../../../public/images/cities/Stockholm.png'
+		img: '/images/cities/Stockholm.png'
 	},
 ]
 

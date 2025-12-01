@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import Card from './Card.jsx';
 import { TestimonialsContext } from "../../contexts/TestimonialsContext";
 
 function Grid() {
@@ -10,11 +11,7 @@ function Grid() {
 		<ul className="grid-container">
 			{testimonials.map(t => (
 				<li key={t.projectId}>
-					<article className="testimonial-article">
-						<h3><a href={`/projects#${t.projectId}`}>{t.name}</a></h3>
-						<q><i>{t.text}</i></q>
-						<p>{`— ${t.author}`}</p>
-					</article>
+					<Card projectId={t.projectId} name={t.name} text={t.text} author={t.author} />
 				</li>
 			))}
 		</ul>
