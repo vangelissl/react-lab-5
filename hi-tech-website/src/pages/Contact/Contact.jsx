@@ -1,4 +1,5 @@
 import Form from './Form.jsx';
+import '../../styles/contact.css';
 
 function Contact() {
 	return (
