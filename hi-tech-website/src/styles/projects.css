@@ -1,0 +1,166 @@
+a:link {
+	color: darkorange;
+}
+
+article img:hover {
+	filter: grayscale();
+}
+
+main article {
+	transform-origin: center center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-style: solid;
+	border-bottom-style: double;
+	border-width: medium;
+	border-radius: 1rem;
+	border-color: hsl(240, 100%, 30%);
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+	min-height: 60vh;
+	height: auto;
+	padding: 2rem;
+	box-sizing: border-box;
+}
+
+ol {
+	list-style-type: none;
+}
+
+#side-nav a {
+	display: block;
+	text-decoration: none;
+	margin: 1rem;
+}
+
+article img {
+	width: 60%;
+	height: auto;
+	border-style: solid;
+	border-color: hsl(38, 45%, 59%);
+	transition: all 1s ease;
+	object-fit: contain;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
+aside {
+	position: sticky;
+	top: 2.5em;
+	left: 0;
+	width: 20%;
+	height: max-content;
+	overflow-y: auto;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	z-index: 0;
+	box-sizing: border-box;
+}
+
+main {
+	flex: 1;
+	margin: 2rem;
+	margin-top: 3rem;
+	box-sizing: border-box;
+}
+
+footer {
+	z-index: 1;
+}
+
+.project-list-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+	padding-left: 0;
+}
+
+.project-list-container>li {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+@media (max-width: 1000px) {
+	main {
+		margin: 0;
+		width: 100%;
+	}
+
+	aside {
+		font-size: 60%;
+	}
+
+	#side-nav {
+		padding-left: 0;
+	}
+
+	.project-list-container {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+		padding: 0 1rem;
+		margin-bottom: 4rem;
+	}
+
+	main {
+		margin-left: 0;
+	}
+
+	aside {
+		flex: 1;
+	}
+
+	main article {
+		min-height: 50vh;
+		padding: 1.5rem;
+	}
+
+	article img {
+		max-width: 50%;
+	}
+}
+
+@media (max-width: 700px) {
+	aside {
+		display: none;
+	}
+
+	#small-logo {
+		max-width: 15vw;
+	}
+}
+
+@media (max-width: 600px) {
+	main article {
+		min-height: auto;
+		padding: 1rem;
+	}
+
+	article img {
+		width: 60%;
+		max-width: 30vh;
+	}
+}
+
+@media (max-width: 400px) {
+	main ol {
+		width: 100%;
+	}
+
+	main article {
+		padding: 1rem;
+	}
+
+	.project-list-container {
+		padding: 0 0.5rem;
+	}
+}

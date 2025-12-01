@@ -2,6 +2,7 @@ import Navigation from './Navigation.jsx';
 import Grid from './Grid.jsx';
 import Slideshow from './Slideshow.jsx';
 import { ProjectsProvider } from '../../contexts/ProjectsContext.jsx';
+import '../../styles/projects.css';
 
 function Projects() {
 	return (
