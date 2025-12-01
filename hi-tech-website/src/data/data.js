@@ -203,7 +203,7 @@ export const projectsList = [
 	},
 ]
 
-export const testimonials = [
+export const testimonialsList = [
 	{
 		projectId: 'kyiv-project',
 		name: 'Safe Kyiv Initiative',
