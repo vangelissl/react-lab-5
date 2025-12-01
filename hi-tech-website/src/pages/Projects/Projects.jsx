@@ -1,12 +1,11 @@
 import Navigation from './Navigation.jsx';
 import Grid from './Grid.jsx';
+import Slideshow from './Slideshow.jsx';
 
 function Projects() {
 	return (
 		<>
-			<div class="slideshow-container" id="slideshow-container"></div>
-			<br />
-			<div id="dots-container" style="text-align:center"></div>
+			<Slideshow />
 			<div class="container">
 				<aside id="project-list">
 					<h1>Our Projects</h1>
