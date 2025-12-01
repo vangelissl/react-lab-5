@@ -6,7 +6,7 @@ article img:hover {
 	filter: grayscale();
 }
 
-main article {
+.projects-main article {
 	transform-origin: center center;
 	display: flex;
 	flex-direction: column;
@@ -45,7 +45,7 @@ article img {
 	object-fit: contain;
 }
 
-.container {
+.projects-container {
 	display: flex;
 	flex-direction: row;
 }
@@ -63,7 +63,7 @@ aside {
 	box-sizing: border-box;
 }
 
-main {
+.projects-main {
 	flex: 1;
 	margin: 2rem;
 	margin-top: 3rem;
@@ -91,7 +91,7 @@ footer {
 }
 
 @media (max-width: 1000px) {
-	main {
+	.projects-main {
 		margin: 0;
 		width: 100%;
 	}

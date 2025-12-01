@@ -1,0 +1,37 @@
+main#testimonials {
+	position: relative;
+	top: 2.5rem;
+	padding: 0 2rem 1rem;
+	margin-bottom: 2rem;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+	list-style-type: none;
+	padding: 0;
+}
+
+.testimonial-article {
+	display: flex;
+	flex-direction: column;
+	border-style: solid;
+	border-radius: 5px;
+	padding: 1rem;
+	height: 17vh;
+}
+
+a {
+	color: rgb(136, 118, 225);
+}
+
+.testimonial-article p {
+	align-self: flex-end;
+}
+
+@media (max-width: 1000px) {
+	.grid-container {
+		grid-template-columns: 1fr;
+	}
+}

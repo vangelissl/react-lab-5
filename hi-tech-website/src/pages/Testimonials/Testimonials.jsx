@@ -1,5 +1,6 @@
 import Grid from './Grid.jsx';
 import { TestimonialsProvider } from '../../contexts/TestimonialsContext.jsx';
+import '../../styles/testimonials.css';
 
 function Testimonials() {
 	return (
