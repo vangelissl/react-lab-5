@@ -25,7 +25,7 @@ function Slideshow() {
 
 	return (
 		<>
-			<div class="slideshow-container" id="slideshow-container">
+			<div className="slideshow-container" id="slideshow-container">
 				{projects.map((p, index) => (
 					<div
 						key={p.id}
@@ -40,7 +40,7 @@ function Slideshow() {
 				<a className="next" onClick={nextSlide}>&#10095;</a>
 			</div>
 			<br />
-			<div id="dots-container" style="text-align:center">
+			<div id="dots-container" style={{ textAlign: 'center' }}>
 				{projects.map((_, index) => (
 					<span
 						key={index}
