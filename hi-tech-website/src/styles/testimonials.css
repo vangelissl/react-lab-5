@@ -1,4 +1,4 @@
-main#testimonials {
+main {
 	position: relative;
 	top: 2.5rem;
 	padding: 0 2rem 1rem;
@@ -20,6 +20,8 @@ main#testimonials {
 	border-radius: 5px;
 	padding: 1rem;
 	height: 17vh;
+	margin-top: auto;
+	align-self: flex-end;
 }
 
 a {
