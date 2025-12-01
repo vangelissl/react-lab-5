@@ -1,5 +1,6 @@
 import { useContext, useState } from 'react';
 import { ProjectsContext } from '../../contexts/ProjectsContext.jsx';
+import '../../styles/slideshow.css';
 
 function Slideshow() {
 	const [slideIndex, setSlideIndex] = useState(0);
