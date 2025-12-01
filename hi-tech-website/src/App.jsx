@@ -4,6 +4,7 @@ import MainLayout from './MainLayout.jsx';
 import Home from './pages/Home/Home.jsx';
 import Projects from './pages/Projects/Projects.jsx';
 import Testimonials from './pages/Testimonials/Testimonials.jsx';
+import Contact from './pages/Contact/Contact.jsx';
 
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
 				</Route>
 				<Route path="/testimonials" element={<MainLayout />}>
 					<Route index element={<Testimonials />} />
+				</Route>
+				<Route path="/contact" element={<MainLayout />}>
+					<Route index element={<Contact />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>
