@@ -202,3 +202,69 @@ export const projectsList = [
 		img: '../../../public/images/cities/Stockholm.png'
 	},
 ]
+
+export const testimonials = [
+	{
+		projectId: 'kyiv-project',
+		name: 'Safe Kyiv Initiative',
+		text: `Our partnership has brought unprecedented efficiency to our city's security
+						infrastructure.`,
+		author: 'Deputy Mayor of Kyiv'
+	},
+	{
+		projectId: 'warsaw-project',
+		name: 'Secure Warsaw Program',
+		text: `The system allows us to respond to violent incidents faster and with greater accuracy.`,
+		author: 'Warsaw Police Commissioner'
+	},
+	{
+		projectId: 'berlin-project',
+		name: 'Berlin Safety Net',
+		text: `With this technology, public transport hubs are safer than ever before.`,
+		author: 'Head of Berlin Transport Authority'
+	},
+	{
+		projectId: 'london-project',
+		name: 'London Guardian Network',
+		text: `Centralizing CCTV feeds across boroughs has transformed the way we manage urban
+						safety.`,
+		author: 'Chief of London Metropolitan Police'
+	},
+	{
+		projectId: 'toronto-project',
+		name: 'Safe Toronto Vision',
+		text: `The bilingual platform ensures both accessibility and security for our citizens.`,
+		author: 'Director of Toronto Public Safety'
+	},
+	{
+		projectId: 'tokyo-project',
+		name: 'Tokyo City Shield',
+		text: `Fast AI-driven alerts have proven invaluable in preventing escalations.`,
+		author: 'Tokyo Metropolitan Police Chief'
+	},
+	{
+		projectId: 'new-york-city-project',
+		name: 'New York Safety Program',
+		text: `Real-time incident detection has become an essential tool for the NYPD.`,
+		author: 'Commissioner of the NYPD'
+	},
+	{
+		projectId: 'paris-project',
+		name: 'Paris Urban Safety Grid',
+		text: `We now have clear predictive insights into where violence is most likely to occur.`,
+		author: 'Paris City Safety Director'
+	},
+	{
+		projectId: 'madrid-project',
+		name: 'Madrid Smart Safety',
+		text: `Customizable reports allow us to adapt the system to the city's evolving needs.`,
+		author: 'Madrid Chief of Municipal Police'
+	},
+	{
+		projectId: 'stockholm-project',
+		name: 'Stockholm Safe Future',
+		text: `The hybrid cloud approach ensures reliability and scalability for a rapidly growing
+						city.`,
+		author: 'Director of Stockholm Smart City Program'
+	}
+]
